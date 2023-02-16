@@ -15,8 +15,9 @@ def get_data():
         from_ = request.form.get("from")
         print(from_)
         to = request.form.get("to")
+        amount = request.form.get("amount")
         print(to)
-        value = get_currency(from_, to)
+        value = get_currency(from_, to, amount)
         print(value)
         return jsonify(value=value)
 
