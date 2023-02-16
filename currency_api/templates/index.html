@@ -21,7 +21,11 @@
                 <label for="to">To:</label>
                 <input type="text" class="form-control" id="to" name="to">
             </div>
-            <button id="anan" type="submit" class="btn btn-primary">Calculate Exchange Rate</button>
+            <div class="form-group">
+                <label for="to">Amount</label>
+                <input type="number" class="form-control" id="Amount" name="amount">
+            </div>
+            <button style="display: none;" type="submit" class="btn btn-primary">Calculate Exchange Rate</button>
         </form>
         <div class="mt-3">
             <div id="result">{{value|safe}}</div>
